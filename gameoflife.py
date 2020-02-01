@@ -1,6 +1,7 @@
+#created by:Oliver Bagos
 import random
-import itertools
 import os, time
+import itertools
 
 clear = lambda: os.system('cls')
 
@@ -20,7 +21,7 @@ class GameOfLife(object):
 		
 		for row in self.game:
 			for cell in row:
-				game += '* ' if cell else '  '
+				game += '* ' if cell else '. '
 			game += '\n'
 		return game
 	
